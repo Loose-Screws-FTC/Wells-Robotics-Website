@@ -5,6 +5,7 @@ import { useRef, useState, useEffect } from 'react'
 function App() {
   const [y, setY] = useState(0)
   const [x, setX] = useState(0)
+  const [theta, setTheta] = useState(0)
   const startTimeReference = useRef(null)
   
   let viewportWidth = document.documentElement.clientWidth;
@@ -19,8 +20,9 @@ function App() {
       const elapsed = timestamp - startTimeReference.current;
       const start = elapsed/1000
 
-      setX(Math.cos(start)*50);
-      setY(Math.sin(start)*50);
+      setX(Math.cos(start)*(viewportWidth/3)+(viewportWidth/2));
+      setTheta(Math.cos(start))
+      // setY(Math.sin(start)*500);
 
       requestAnimationFrame(animate);
     }
@@ -32,23 +34,26 @@ function App() {
     <>
       <title>FTC 7776</title>
       <header>
-        7776 Robotics
+        <h1>7776 Robotics</h1>
+        <nav>
+          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Robot</a> | 
+          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Team</a> | 
+          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Impact</a> | 
+          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our FIRST Mission</a>
+      </nav>
       </header>
         <div class = "top">
           <img 
+            className="logo"
             src={logo} 
             alt = "TeamLogo" 
             style={{
-            width:"200px",
-            height: "auto", 
-            // position: "relative",
-            // left: `${x+(viewportWidth/2)-100}px`, 
-            // top: `${y+(viewportHeight/2)-(150)}px`,
-            // transform: `rotateY(${((x-200)/200)*360}deg)`,
-            // transformStyle: "preserve-3d",
-          }}/>
+              transform: `translateX(calc(${x}px - var(--element_width)/2)) rotateY(${theta}deg)`,
+            }}
+          />
         </div>
-      <section>
+        <p>{x}</p>
+      <section> 
         <div class="content">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
         </div>

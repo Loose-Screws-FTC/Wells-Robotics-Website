@@ -1,0 +1,18 @@
+nav {
+    color: white;
+    text-align: right;
+}
+
+header {
+    z-index: 10;
+}
+
+.logo {
+    z-index: 9;
+    position: relative;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    height: auto;
+    --element_width: 200px;
+    width: var(--element_width);
+}
