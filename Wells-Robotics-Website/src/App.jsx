@@ -4,12 +4,9 @@ import { useRef, useState, useEffect } from 'react'
 
 function App() {
   const [y, setY] = useState(0)
-  const [x, setX] = useState(0)
+  const [x, setX] = useState(1)
   const [theta, setTheta] = useState(0)
   const startTimeReference = useRef(null)
-  
-  let viewportWidth = document.documentElement.clientWidth;
-  let viewportHeight = document.documentElement.clientHeight;
 
   useEffect(() => {
     function animate(timestamp) {
@@ -19,10 +16,10 @@ function App() {
 
       const elapsed = timestamp - startTimeReference.current;
       const start = elapsed/1000
+      const viewportWidth = document.documentElement.clientWidth;
 
-      setX(Math.cos(start)*(viewportWidth/3)+(viewportWidth/2));
-      setTheta(Math.cos(start))
-      // setY(Math.sin(start)*500);
+      setX((viewportWidth/2));
+      setTheta(Math.cos(start)*-180)
 
       requestAnimationFrame(animate);
     }
@@ -31,50 +28,59 @@ function App() {
   }, [])
 
   return(
-    <>
-      <title>FTC 7776</title>
+    <main>
       <header>
-        <h1>7776 Robotics</h1>
-        <nav>
-          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Robot</a> | 
-          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Team</a> | 
-          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Impact</a> | 
-          <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our FIRST Mission</a>
-      </nav>
+        <div>
+          <h1>7776 Robotics</h1>
+        </div>
+        <div>
+          <nav>
+            <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Robot</a>|
+            <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Team</a>|
+            <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our Impact</a>|
+            <a href = "https://en.wikipedia.org/wiki/Powdered_sugar">Our FIRST Mission</a>
+          </nav>
+        </div>
       </header>
-        <div class = "top">
-          <img 
-            className="logo"
-            src={logo} 
-            alt = "TeamLogo" 
-            style={{
-              transform: `translateX(calc(${x}px - var(--element_width)/2)) rotateY(${theta}deg)`,
-            }}
-          />
-        </div>
-        <p>{x}</p>
+      <div className="top" style = {{perspective: "600px"}}>
+        <img 
+          className="logo"
+          src={logo} 
+          alt = "TeamLogo" 
+          style={{
+            transformOrigin: "center",
+            transform: `translateX(calc(${x}px - var(--element_width) / 2))`, //rotateY(${theta}deg),
+            backfaceVisibility: "visible",
+            transformStyle: "preserve-3d"
+          }}
+        />
+      </div>
       <section> 
-        <div class="content">
+        <div className="content">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
         </div>
       </section>
       <section>
-        <div class="content">
+        <div className="content">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
         </div>
       </section>
       <section>
-        <div class="content">
+        <div className="content">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
         </div>
       </section>
       <section>
-        <div class="content">
+        <div className="content">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
         </div>
       </section>
- 
-    </>
+      
+      <footer>
+        <p>Copyright ©2025</p>
+        <p>Website created by The Lord of Dorthonion, King Upon Foen, Master of the Highlands, Enjoyer of Pesto Sandwiches, Presser of Down on D-Pad</p>
+      </footer>
+    </main>
   )
 }
 
