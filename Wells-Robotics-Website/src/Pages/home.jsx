@@ -29,32 +29,25 @@ export default function Home() {
 
   return(
     <main>
-      <div className="top" style = {{perspective: "600px"}}>
-        <img 
-          className="logo"
-          src={logo} 
-          alt = "TeamLogo" 
-          style={{
-            transformOrigin: "center",
-            transform: `translateX(calc(${x}px - var(--element_width) / 2))`, //rotateY(${theta}deg),
-            backfaceVisibility: "visible",
-            transformStyle: "preserve-3d"
-          }}
-        />
+      <div className="top">
+        <img className="logo" src={logo} alt="TeamLogo"/>
       </div>
       <Unit
         title="Our Logo"
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+        text="I'm pretty sure Maya designed it? Its really good."
         image_src={logo}
       />
       <Unit
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+        title="Our People"
+        text="We're pretty cool people"
       />
       <Unit
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+        title="Our Robot"
+        text="Innovative. Ingenious. Powerful. Deceptively So. Our Robot."
       />
       <Unit
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+        title="Our Impact"
+        text="Very closely tied to our sister team. Also we help our feeder middle school team."
       />
     </main>
   )
