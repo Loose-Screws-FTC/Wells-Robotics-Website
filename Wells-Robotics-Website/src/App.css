@@ -52,6 +52,14 @@ nav a{
     width:900px;
 }
 
+.content{
+    flex-direction: column;
+}
+
+.content{
+    text-align: center;
+}
+
 .title{
     text-align: left;
 }

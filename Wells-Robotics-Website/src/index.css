@@ -33,7 +33,11 @@ header {
 footer {
     margin-top: auto;
     position: relative;
-    bottom:0px;
+    bottom: 0px;
+}
+
+footer p{
+    margin: 20px;
 }
 
 .unit:nth-child(odd) {
