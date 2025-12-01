@@ -1,4 +1,4 @@
-export default function Unit({title,text}){
+export default function Unit({title,text, image_src}){
     return(
         <div className="unit">
             <div className="content">
