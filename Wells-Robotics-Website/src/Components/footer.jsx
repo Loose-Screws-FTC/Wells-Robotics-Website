@@ -14,7 +14,6 @@ export default function Footer(){
                 Enemy of Common Cents,
                 Thinker of Titles,
                 Linker to Powdered Sugar,
-                
             </p>
             <p>
                 TCS

@@ -54,6 +54,7 @@ nav a{
     align-items: center;
 }
 
+
 .unit_title{
     text-align: center;
     margin-bottom: 5px;
@@ -61,4 +62,7 @@ nav a{
 
 .content{
     margin-right:20px;
+}
+.title{
+    text-align: left;
 }
