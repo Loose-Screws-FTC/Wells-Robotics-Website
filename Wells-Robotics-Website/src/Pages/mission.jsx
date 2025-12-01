@@ -1,9 +1,9 @@
-import Header from "../Components/header"
+import Title from "../Components/title"
 
 export default function Mission(){
     return(
         <>
-            <h1>Mission page</h1>
+            <Title text="Our FIRST MISSION"/>
         </>
     )
 }

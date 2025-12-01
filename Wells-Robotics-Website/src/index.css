@@ -8,7 +8,7 @@ html {
     --background-color-1: #222;
     --background-color-2: #333;
     --area-padding: 1rem;
-    background-color: rgb(255, 0, 221);
+    background-color: #312d2d;
     color: #ddd;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -32,18 +32,15 @@ header {
 
 footer {
     margin-top: auto;
+    position: relative;
+    bottom:0px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    padding: var(--area-padding) calc((100% - min(80ch, 100%)) / 2 + var(--area-padding));
-}
-
-section:nth-child(even) {
+.unit:nth-child(odd) {
     background-color: var(--background-color-1);
 }
 
-section:nth-child(odd) {
+.unit:nth-child(even) {
     background-color: var(--background-color-2);
+    float:right;
 }

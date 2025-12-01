@@ -1,9 +1,9 @@
-import Header from "../Components/header"
+import Title from "../Components/title"
 
 export default function Impact() {
     return(
-        <>
-            <h1>Impact page</h1>
+        <> 
+            <Title text="Our Impact"/>
         </>
     )
 }

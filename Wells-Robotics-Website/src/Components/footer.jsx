@@ -9,10 +9,11 @@ export default function Footer(){
                 Reader of the Silmarillion,
                 Consumer of Wikipedia articles,
                 Member of the Duumvirate of Wells Robotics,
-                Player of scacchic games,
-                Researcher of zinc shams,
+                Player of Scacchic Games,
+                Researcher of Zinc Shams,
                 Enemy of Common Cents,
-                Thinker of titles,
+                Thinker of Titles,
+                Linker to Powdered Sugar,
             </p>
             <p>
                 TCS

@@ -41,3 +41,17 @@ nav a{
     align-items: center;
     width: var(--element_width);
 }
+
+.unit{
+    background-color:black;
+    border-radius: 40px;
+    padding:40px;
+    display:flex;
+    justify-content: center;
+    margin:20px;
+    width:900px;
+}
+
+.title{
+    text-align: left;
+}

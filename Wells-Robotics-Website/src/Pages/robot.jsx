@@ -1,9 +1,9 @@
-import Header from "../Components/header"
+import Title from "../Components/title"
 
 export default function Robot(){
     return(
         <>
-            <h1>Robot page</h1>
+            <Title text="Our Robot"/>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import logo from "../assets/trans-logo.png"
 import { useRef, useState, useEffect } from "react"
-import Header from "../Components/header"
+import Unit from "../Components/unit"
 
 export default function Home() {
   const [y, setY] = useState(0)
@@ -42,26 +42,18 @@ export default function Home() {
           }}
         />
       </div>
-      <section> 
-        <div className="content">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
-        </div>
-      </section>
-      <section>
-        <div className="content">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
-        </div>
-      </section>
-      <section>
-        <div className="content">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
-        </div>
-      </section>
-      <section>
-        <div className="content">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae.</p>
-        </div>
-      </section>
+      <Unit
+        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+      />
+      <Unit
+        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+      />
+      <Unit
+        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+      />
+      <Unit
+        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quia! Unde, alias minima! Perferendis, eaque. Esse consequuntur, adipisci facere rem dolorum voluptatum. Hic molestias, tenetur fugit rem error porro repudiandae."
+      />
     </main>
   )
 }
