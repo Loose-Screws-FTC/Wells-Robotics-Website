@@ -39,7 +39,7 @@ nav a{
     display:flex;
     justify-content: center;
     align-items: center;
-    width:500px;
+    width:60%;
     height:auto;
 }
 
@@ -50,7 +50,7 @@ nav a{
     display: flex;
     justify-content: center;
     margin: 20px;
-    width: 900px;
+    width: 65%;
     align-items: center;
 }
 

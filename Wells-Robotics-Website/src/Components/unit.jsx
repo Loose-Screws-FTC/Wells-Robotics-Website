@@ -9,7 +9,6 @@ export default function Unit({title,text, image_src}){
                     <p>{text}</p>
                 </div>
             </div>
-            <img src={image_src} width="200px" height="auto"/>
         </div>
     )
 }
