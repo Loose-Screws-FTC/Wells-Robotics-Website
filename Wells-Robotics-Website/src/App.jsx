@@ -10,19 +10,21 @@ import Footer from "./Components/footer"
 
 function App() {
   return(
-    <>
-    <Router>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/robot" element={<Robot/>}/>
-        <Route path="/Impact" element={<Impact/>}/>
-        <Route path="/Mission" element={<Mission/>}/>
-        <Route path="/Team" element={<Team/>}/>
-      </Routes>
-    </Router>
-    <Footer/>
-    </>
+    <div class="webpage">
+      <main>
+        <Router>
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/robot" element={<Robot/>}/>
+            <Route path="/Impact" element={<Impact/>}/>
+            <Route path="/Mission" element={<Mission/>}/>
+            <Route path="/Team" element={<Team/>}/>
+          </Routes>
+        </Router>
+      </main>
+      <Footer/>
+    </div>
   )
 }
 

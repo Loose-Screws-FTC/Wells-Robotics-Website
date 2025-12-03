@@ -12,7 +12,7 @@ export default function Team(){
             />
             <Unit
                 title="Rowan"
-                text="Rowan also builds robots and screws things in. Very similar to Martin. But a little older. He is tall. Good at Fusion"
+                text="In a class of his own. I bricked my computer -Rowan"
             />
             <Unit
                 title="Henry"
@@ -32,19 +32,53 @@ export default function Team(){
             />
             <Unit
                 title="Aidyn"
-                text="Friend of Damien and Jack. Also old"
+                text="Friend of Damien and Jack"
             />
             <Unit
                 title="Adaya"
-                text="Outreach, engineering portfolio, very helpful"
+                text="Outreach, engineering portfolio, very helpful, senior"
             />
             <Unit
-                title="Ansel"
+                title="Ansel, Matthew, and Javyn"
                 text="If only :("
             />
             <Unit
                 title="Henry 2"
                 text="Distractor of the Sister Team. Gremlin. Ruined the Jackson Team -Reid"
+            />
+            <Unit
+                title="Anna"
+                text="Senior"
+            />
+            <Unit
+                title="Zoe"
+                text="Another senior"
+            />
+
+            <Title text="Our Mentors"/>
+            <Unit
+                title="Paul"
+                text="Mentor"
+            />
+            <Unit
+                title="Martin"
+                text="Mentor"
+            />
+            <Unit
+                title="Matthew"
+                text="Mentor"
+            />
+            <Unit
+                title="Wes"
+                text="Mentor"
+            />
+            <Unit
+                title="Angie"
+                text="Mentor"
+            />
+            <Unit
+                title="Carl"
+                text="Mentor"
             />
         </>
     )

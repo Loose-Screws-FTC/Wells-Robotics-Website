@@ -6,7 +6,7 @@
 
 html {
     --background-color-1: #222;
-    --background-color-2: #333;
+    --background-color-2: #384829;
     --area-padding: 1rem;
     background-color: #312d2d;
     color: #ddd;
@@ -14,9 +14,15 @@ html {
     font-size: 1.5rem;
 }
 
+.webpage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+
 main {
-    height: 100%;
-    margin: 0;
+    flex: 1 0 auto;
 }
 
 footer, header {
@@ -26,21 +32,36 @@ footer, header {
 }
 
 header {
-    position: sticky;
-    top: 0;
+    color:white;
+    display:flex;
+    z-index:10;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+}
+
+header h1 a {
+    color:white;
+    text-decoration: none;
+}
+
+header h1 a:hover, nav a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    margin-top: auto;
-    position: relative;
-    bottom:0px;
+    flex-shrink: 0;
+
+}
+
+footer p {
+    padding: .4rem;
 }
 
 .unit:nth-child(odd) {
-    background-color: var(--background-color-1);
+    background-color: #4b6f4f;
 }
 
 .unit:nth-child(even) {
-    background-color: var(--background-color-2);
-    float:right;
+    background-color: #314933;
 }
