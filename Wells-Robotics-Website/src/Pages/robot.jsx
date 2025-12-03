@@ -22,7 +22,7 @@ export default function Robot(){
                 src="Wells-Robotics-Website/src/assets/Chassis Assembly.glb"
                 shadow-intensity="1"
                 camera-controls touch-action="pan-y"
-                style={{ width: "100%", height: "500px"}}
+                style={{ width: "100%", height: "50rem"}}
             ></model-viewer>
         </>
     )
