@@ -17,14 +17,10 @@ export default function Robot(){
                 title="Outtake"
                 text="The outtake is an important part of the robot. It's how we shoot artifacts."
             />            
-            <model-viewer 
-                alt="FTC 2026 Robot" 
-                src="Wells-Robotics-Website\src\assets\ITD Chassis v47.glb"
-                shadow-intensity="1"
-                camera-controls touch-action="pan-y"
-                style={{ width: "100%", height: "50rem"}}
-                orientation="0deg 270deg 180deg"
-            ></model-viewer>
+            <Unit
+                title="2024 Robot"
+                robot_src="Wells-Robotics-Website/src/assets/ITD Chassis v47.glb"
+            />     
         </>
     )
 }
